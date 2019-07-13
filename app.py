@@ -22,7 +22,7 @@ def get_distance_between_loc(start, end):
 
 
 def get_carbon(km):
-    kg = km*0.227
+    kg = km*0.166
     return round(kg, 2)
 
 
