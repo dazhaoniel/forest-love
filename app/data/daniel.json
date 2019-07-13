@@ -1,204 +1,242 @@
 {
   "data": [
+    {"start": "CAI", "end": "AUH"},
+    {"start": "AUH", "end": "PEK"},
+    {"start": "PEK", "end": "SHE"},
+    {"start": "CGQ", "end": "PEK"},
+    {"start": "PEK", "end": "JFK"},
+    {"start": "JFK", "end": "SCL"},
+    {"start": "SCL", "end": "CJC"},
+    {"start": "CJC", "end": "SCL"},
+    {"start": "SCL", "end": "GRU"},
+    {"start": "GRU", "end": "JFK"},
+    {"start": "LGA", "end": "TYS"},
+    {"start": "TYS", "end": "LGA"},
+    {"start": "JFK", "end": "LAX"},
+    {"start": "LAX", "end": "JFK"},
+    {"start": "JFK", "end": "CDG"},
+    {"start": "CDG", "end": "JFK"},
+    {"start": "CDG", "end": "TNR"},
+    {"start": "TNR", "end": "CDG"},
+    {"start": "TLE", "end": "TNR"},
+    {"start": "JFK", "end": "KEF"},
+    {"start": "KEF", "end": "JFK"},
+    {"start": "JFK", "end": "SFO"},
+    {"start": "SFO", "end": "JFK"},
+    {"start": "JFK", "end": "PEK"},
+    {"start": "PEK", "end": "JFK"},
+    {"start": "PEK", "end": "CGQ"},
+    {"start": "CGQ", "end": "PEK"},
+    {"start": "JFK", "end": "MEX"},
+    {"start": "MEX", "end": "JFK"},
+    {"start": "JFK", "end": "BOG"},
+    {"start": "BOG", "end": "JFK"},
+    {"start": "BOG", "end": "LAP"},
+    {"start": "LAP", "end": "BOG"}
+    ]
+}
+
+{
+  "data": [
     {
       "start": "CAI",
       "end": "AUH",
       "kilometer": 2381.4223370299565,
-      "carbon": 540.58
+      "carbon": 395.32
     },
     {
       "start": "AUH",
       "end": "PEK",
       "kilometer": 5964.75538871924,
-      "carbon": 1354.0
+      "carbon": 990.15
     },
     {
       "start": "PEK",
       "end": "SHE",
       "kilometer": 606.6352016092013,
-      "carbon": 137.71
+      "carbon": 100.7
     },
     {
       "start": "CGQ",
       "end": "PEK",
       "kilometer": 869.2854265580085,
-      "carbon": 197.33
+      "carbon": 144.3
     },
     {
       "start": "PEK",
       "end": "JFK",
       "kilometer": 11003.766135077998,
-      "carbon": 2497.85
+      "carbon": 1826.63
     },
     {
       "start": "JFK",
       "end": "SCL",
       "kilometer": 8202.676736316462,
-      "carbon": 1862.01
+      "carbon": 1361.64
     },
     {
       "start": "SCL",
       "end": "CJC",
       "kilometer": 1221.4145841706397,
-      "carbon": 277.26
+      "carbon": 202.75
     },
     {
       "start": "CJC",
       "end": "SCL",
       "kilometer": 1221.4145841706397,
-      "carbon": 277.26
+      "carbon": 202.75
     },
     {
       "start": "SCL",
       "end": "GRU",
       "kilometer": 2616.569100120726,
-      "carbon": 593.96
+      "carbon": 434.35
     },
     {
       "start": "GRU",
       "end": "JFK",
       "kilometer": 7636.241231183196,
-      "carbon": 1733.43
+      "carbon": 1267.62
     },
     {
       "start": "LGA",
       "end": "TYS",
       "kilometer": 1041.9549679274742,
-      "carbon": 236.52
+      "carbon": 172.96
     },
     {
       "start": "TYS",
       "end": "LGA",
       "kilometer": 1041.9549679274742,
-      "carbon": 236.52
+      "carbon": 172.96
     },
     {
       "start": "JFK",
       "end": "LAX",
       "kilometer": 3982.9402694119804,
-      "carbon": 904.13
+      "carbon": 661.17
     },
     {
       "start": "LAX",
       "end": "JFK",
       "kilometer": 3982.9402694119804,
-      "carbon": 904.13
+      "carbon": 661.17
     },
     {
       "start": "JFK",
       "end": "CDG",
       "kilometer": 5849.319990183725,
-      "carbon": 1327.8
+      "carbon": 970.99
     },
     {
       "start": "CDG",
       "end": "JFK",
       "kilometer": 5849.319990183725,
-      "carbon": 1327.8
+      "carbon": 970.99
     },
     {
       "start": "CDG",
       "end": "TNR",
       "kilometer": 8726.147301792958,
-      "carbon": 1980.84
+      "carbon": 1448.54
     },
     {
       "start": "TNR",
       "end": "CDG",
       "kilometer": 8726.147301792958,
-      "carbon": 1980.84
+      "carbon": 1448.54
     },
     {
       "start": "TLE",
       "end": "TNR",
       "kilometer": 640.0023321873722,
-      "carbon": 145.28
+      "carbon": 106.24
     },
     {
       "start": "JFK",
       "end": "KEF",
       "kilometer": 4172.353835860507,
-      "carbon": 947.12
+      "carbon": 692.61
     },
     {
       "start": "KEF",
       "end": "JFK",
       "kilometer": 4172.353835860507,
-      "carbon": 947.12
+      "carbon": 692.61
     },
     {
       "start": "JFK",
       "end": "SFO",
       "kilometer": 4161.868164483656,
-      "carbon": 944.74
+      "carbon": 690.87
     },
     {
       "start": "SFO",
       "end": "JFK",
       "kilometer": 4161.868164483656,
-      "carbon": 944.74
+      "carbon": 690.87
     },
     {
       "start": "JFK",
       "end": "PEK",
       "kilometer": 11003.766135077998,
-      "carbon": 2497.85
+      "carbon": 1826.63
     },
     {
       "start": "PEK",
       "end": "JFK",
       "kilometer": 11003.766135077998,
-      "carbon": 2497.85
+      "carbon": 1826.63
     },
     {
       "start": "PEK",
       "end": "CGQ",
       "kilometer": 869.2854265580085,
-      "carbon": 197.33
+      "carbon": 144.3
     },
     {
       "start": "CGQ",
       "end": "PEK",
       "kilometer": 869.2854265580085,
-      "carbon": 197.33
+      "carbon": 144.3
     },
     {
       "start": "JFK",
       "end": "MEX",
       "kilometer": 3363.7227430824155,
-      "carbon": 763.57
+      "carbon": 558.38
     },
     {
       "start": "MEX",
       "end": "JFK",
       "kilometer": 3363.7227430824155,
-      "carbon": 763.57
+      "carbon": 558.38
     },
     {
       "start": "JFK",
       "end": "BOG",
       "kilometer": 3980.85697660289,
-      "carbon": 903.65
+      "carbon": 660.82
     },
     {
       "start": "BOG",
       "end": "JFK",
       "kilometer": 3980.85697660289,
-      "carbon": 903.65
+      "carbon": 660.82
     },
     {
       "start": "BOG",
       "end": "LAP",
       "kilometer": 4431.927801601642,
-      "carbon": 1006.05
+      "carbon": 735.7
     },
     {
       "start": "LAP",
       "end": "BOG",
       "kilometer": 4431.927801601642,
-      "carbon": 1006.05
+      "carbon": 735.7
     }
   ],
   "total_distance": 145532.47028230995,
-  "total_carbon": 33035.87
+  "total_carbon": 24158.390000000007
 }
