@@ -8,6 +8,7 @@ Request Parameter:
 
 ***name*** (requied) The name of a city or airport code, ie: New York, or JFK
 
+
 ### Distances between two airport codes
 
 	POST /api/v1/distances
@@ -22,6 +23,7 @@ Request Body:
     ]
 }
 ```
+
 
 ### Save a list of trips, distances and carbon emission to pickle
 
