@@ -1,6 +1,8 @@
 import json
+import uuid
+import hashlib
 import pandas as pd
-from flask import Flask, jsonify, request
+from flask import Flask, request
 from geopy import distance
 
 
@@ -24,13 +26,6 @@ def get_carbon(km):
     return round(kg, 2)
 
 
-def get_new_records():
-    return pd.DataFrame(columns=['start', 'end', 'kilometer', 'carbon'])
-
-
-# def save_pickle()
-
-
 @app.route('/alive')
 def hello():
     return 'Hello World!'
@@ -47,9 +42,9 @@ def get_location():
 @app.route('/api/v1/distances', methods=['POST'])
 def get_distances():
     data = json.loads(request.data)['data']
+    
     total_distance = 0
     total_carbon = 0
-    
     for trip in data:
         km = get_distance_between_loc(trip['start'], trip['end'])
         trip['kilometer'] = km
@@ -60,18 +55,14 @@ def get_distances():
     return json.dumps({'data': data, 'total_distance': total_distance, 'total_carbon': total_carbon}, indent=2)
 
 
-@app.route('/api/v1/add-trip', methods=['POST'])
+@app.route('/api/v1/save-records', methods=['POST'])
 def add_trip():
-    # row = {'start': request.args.get('start'), 'end': request.args.get('end'), 'kilometer': request.args.get('miles'), 'carbon': request.args.get('carbon')}
-    # airports.append(row, ignore_index=True)
-    return
-
-
-@app.route('/api/v1/add-email', methods=['POST'])
-def add_email():
     email = request.args.get('email')
-    save_pickle(email)
-    return
+    data = json.loads(request.data)['data']
+    f = hashlib.md5(email.encode()).hexdigest() if email else 'temp_'+str(uuid.uuid1().hex)
+    df = pd.DataFrame.from_dict(data, orient='columns')
+    df.to_pickle('data/pickled/users/'+f+'.pkl')
+    return ('', 200)
 
 
 if __name__ == '__main__':
