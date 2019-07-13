@@ -1,0 +1,7 @@
+{
+	"data": [
+		{"start": "JFK", "end": "CGD"},
+		{"start": "LGA", "end": "YYZ"},
+		{"start": "JFK", "end": "PEK"}
+	]
+}
