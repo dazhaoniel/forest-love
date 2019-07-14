@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-white sticky-top">
     <a href="/" class="navbar-brand">
-  	  <img src="../assets/images/logo.png" height="70" alt="Forest Love">
+      <img src="../assets/images/logo.png" height="70" alt="Forest Love">
     </a>
     <router-link 
       v-for="routes in links"
