@@ -2,7 +2,7 @@
 
 ### Locations list based on input
 
-	POST /api/v1/location
+	GET /api/v1/location
 
 Request Parameter:
 

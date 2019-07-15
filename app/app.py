@@ -31,11 +31,12 @@ def hello():
     return 'Hello World!'
 
 
-@app.route('/api/v1/location', methods=['POST'])
+@app.route('/api/v1/location', methods=['GET'])
 def get_location():
     name = request.args.get('name')
-    df = airports.loc[airports['name'].str.contains(name) 
-    | airports['city'].str.contains(name)]
+    df = airports.loc[airports['name'].str.contains(name, case=False) 
+    | airports['city'].str.contains(name, case=False)
+    | airports['iata'].str.contains(name, case=False)]
     return json.dumps(json.loads(df.reset_index().to_json(orient='records')), indent=2)
 
 
