@@ -39,7 +39,6 @@ class App extends Component {
   }
 
   selectOrigin(selected) {
-    console.log("selected", selected);
     this.setState({ originAirportCode: selected.value });
   }
 
