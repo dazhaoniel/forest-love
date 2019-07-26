@@ -1,17 +1,15 @@
 body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
-h3 {
-  margin: 40px 0 0;
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5;
 }
 .snow-mountain {
 	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-position: right bottom;
+	background-attachment: fixed;
 }
-/*ul {
-  list-style-type: none;
-  padding: 0;
+.forest-love-intro {
+	line-height: 2em;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}*/

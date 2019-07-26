@@ -5,10 +5,10 @@ function About() {
   	<div class="container-fluid">
       <div class="row snow-mountain">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
-          <h4>Travel inspires us,</h4>
-          <h4>but we are also aware of what this means for the planet.</h4>
-          <h4>JFK > PEK</h4>
-          <h4>2923 kg</h4>
+          <h1><span class="display-3 bg-white">Travel inspires us,</span></h1>
+          <h1><span class="bg-white">but we are also aware of what this means for our planet.</span></h1>
+          <h2><span class="bg-white">JFK > PEK</span></h2>
+          <h2><span class="bg-white">2923 kg</span></h2>
         </div>
         <div class="col">
         </div>
