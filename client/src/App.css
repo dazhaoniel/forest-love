@@ -23,13 +23,22 @@
   to { transform: rotate(360deg); }
 }
 
-.airportList {
-  list-style: none;
-  font-color: blue;
-  margin-bottom: 10px;
+.forest-love-main {
+  margin-left: 10px;
+}
+.searchContainer {
+  display: flex;
+}
+.search-column {
+  flex: 1;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.airportInputs {
-  margin-bottom: 10px;
-  width: 200px;
+.searchButton {
+  margin-top:15px;
+}
+
+.totals {
+  margin-top: 10px;
 }
