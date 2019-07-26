@@ -4,6 +4,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.5;
 }
+.searchContainer {
+  display: flex;
+}
+.search-column {
+  flex: 1;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.searchButton {
+  margin-top:15px;
+}
+.airportInputs {
+  margin-bottom: 10px;
+  width: 200px;
+}
+.totals {
+  margin-top: 10px;
+} 
 .snow-mountain {
 	background-image: url("../images/bg.jpg");
 	background-size: cover;

@@ -74,11 +74,14 @@ class Search extends Component {
   render() {
     return (
       <div className="container">
+        <h1 className="">
+          Calculate and Offset your Emissions!
+        </h1>
         <div className="searchContainer">
           <AsyncSelect
             getOptionLabel={this.getOptionLabel}
             loadOptions={input => this.getAirportOptions(input, "origin")}
-            className="search-column"
+            className="search-column "
             placeholder="Search for origin city"
             onChange={this.selectOrigin}
           />
@@ -89,9 +92,9 @@ class Search extends Component {
             placeholder="Search for destination city"
             onChange={this.selectDestination}
           />
-          <div className="custom-control custom-radio search-column">
+          <div className="custom-control custom-checkbox search-column">
             <input
-              type="radio"
+              type="checkbox"
               onChange={this.changeChecked}
               checked={this.state.roundTripChecked}
               className="custom-control-input"
@@ -105,7 +108,9 @@ class Search extends Component {
         <button type="button" onClick={this.getResults} className="btn btn-primary">
           See my carbon footprint!
         </button>
-        {this.renderResults()}
+        <div>
+          {this.renderResults()}
+        </div>
       </div>
     );
   }
