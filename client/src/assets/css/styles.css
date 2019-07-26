@@ -1,5 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 body {
-  /*font-family: 'Oswald', sans-serif;*/
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 h3 {

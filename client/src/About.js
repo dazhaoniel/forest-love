@@ -1,5 +1,8 @@
-<template>
-  <div>
+import React from "react";
+
+function About() {
+  return (
+  	<div>
     <h4>Travel inspires us, but we are also aware of what this means for the planet.</h4>
     <h4>JFK > PEK</h4>
     <h4>2923 kg</h4>
@@ -15,20 +18,7 @@
     <h4>Projects We Support</h4>
     <projects/>
   </div>
-</template>
-
-<script>
-import Projects from './Projects';
-export default {
-  name: 'About',
-  props: {
-    msg: String
-  },
-  components: {
-    'projects': Projects
-  }
+  );
 }
-</script>
 
-<style scoped>
-</style>
+export default About;
