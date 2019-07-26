@@ -73,7 +73,7 @@ class Search extends Component {
 
   render() {
     return (
-      <div className="forest-love-main container mx-auto px-4">
+      <div className="container">
         <div className="searchContainer">
           <AsyncSelect
             getOptionLabel={this.getOptionLabel}
@@ -89,20 +89,20 @@ class Search extends Component {
             placeholder="Search for destination city"
             onChange={this.selectDestination}
           />
-          <div className="custom-control custom-checkbox search-column">
+          <div className="custom-control custom-radio search-column">
             <input
-              type="checkbox"
+              type="radio"
               onChange={this.changeChecked}
               checked={this.state.roundTripChecked}
               className="custom-control-input"
               id="roundTripCheck"
             />
             <label className="custom-control-label" htmlFor="roundTripCheck">
-              Round Trip?
+              Round-trip
             </label>
           </div>
         </div>
-        <button type="button" onClick={this.getResults} className="searchButton btn btn-success">
+        <button type="button" onClick={this.getResults} className="btn btn-primary">
           See my carbon footprint!
         </button>
         {this.renderResults()}
