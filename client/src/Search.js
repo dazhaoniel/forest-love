@@ -9,9 +9,11 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      originAirportCode: "",
-      destinationAirportCode: "",
-      roundTripChecked: false,
+      data: [{
+        originAirportCode: "",
+        destinationAirportCode: "",
+        roundTripChecked: false,
+      }],
       showResults: false,
       totalDistance: '',
       totalCarbon: ''
@@ -49,6 +51,22 @@ class Search extends Component {
   changeChecked() {
     this.setState({ roundTripChecked: !this.state.roundTripChecked });
   }
+
+  handleAddTrip = () => {
+    this.setState({
+      trips: this.state.data.concat([{
+        originAirportCode: "",
+        destinationAirportCode: "",
+        roundTripChecked: false,
+      }])
+    });
+  };
+
+  handleRemoveTrip = idx => () => {
+    this.setState({
+      trips: this.state.data.filter((s, sidx) => idx !== sidx)
+    });
+  };
   
   getResults() {
     const {originAirportCode, destinationAirportCode, roundTripChecked} = this.state;
@@ -77,22 +95,23 @@ class Search extends Component {
         <h1 className="">
           Calculate and Offset your Emissions!
         </h1>
-        <div className="searchContainer">
+        {this.state.data.map((data, idx) => (
+        <div className="row">
           <AsyncSelect
             getOptionLabel={this.getOptionLabel}
             loadOptions={input => this.getAirportOptions(input, "origin")}
-            className="search-column "
-            placeholder="Search for origin city"
+            className="col"
+            placeholder="From"
             onChange={this.selectOrigin}
           />
           <AsyncSelect
             getOptionLabel={this.getOptionLabel}
             loadOptions={input => this.getAirportOptions(input, "destination")}
-            className="search-column"
-            placeholder="Search for destination city"
+            className="col"
+            placeholder="To"
             onChange={this.selectDestination}
           />
-          <div className="custom-control custom-checkbox search-column">
+          <div className="custom-control custom-checkbox col">
             <input
               type="checkbox"
               onChange={this.changeChecked}
@@ -104,7 +123,14 @@ class Search extends Component {
               Round-trip
             </label>
           </div>
+          <button type="button" className="small" onClick={this.handleRemoveTrip(idx)}>
+            -
+          </button>
+          <button type="button" className="small" onClick={this.handleAddTrip}>
+            +
+          </button>
         </div>
+        ))}
         <button type="button" onClick={this.getResults} className="btn btn-primary">
           See my carbon footprint!
         </button>

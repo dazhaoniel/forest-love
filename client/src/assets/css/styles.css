@@ -4,7 +4,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.5;
 }
-.searchContainer {
+/*.searchContainer {
   display: flex;
 }
 .search-column {
@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .searchButton {
   margin-top:15px;
-}
+}*/
 .airportInputs {
   margin-bottom: 10px;
   width: 200px;
