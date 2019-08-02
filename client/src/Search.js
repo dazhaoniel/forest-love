@@ -23,6 +23,8 @@ class Search extends Component {
     this.selectDestination = this.selectDestination.bind(this);
     this.changeChecked = this.changeChecked.bind(this);
     this.getResults = this.getResults.bind(this);
+    this.handleAddTrip = this.handleAddTrip.bind(this);
+    this.handleRemoveTrip = this.handleRemoveTrip.bind(this);
   }
 
   componentDidMount() {}
@@ -52,7 +54,7 @@ class Search extends Component {
     this.setState({ roundTripChecked: !this.state.roundTripChecked });
   }
 
-  handleAddTrip = () => {
+  handleAddTrip = idx => e => {
     this.setState({
       trips: this.state.data.concat([{
         originAirportCode: "",
@@ -62,7 +64,7 @@ class Search extends Component {
     });
   };
 
-  handleRemoveTrip = idx => () => {
+  handleRemoveTrip = idx => e => {
     this.setState({
       trips: this.state.data.filter((s, sidx) => idx !== sidx)
     });
@@ -96,7 +98,7 @@ class Search extends Component {
           Calculate and Offset your Emissions!
         </h1>
         {this.state.data.map((data, idx) => (
-        <div className="row">
+        <div className="row" key={"oneTrip"+idx}>
           <AsyncSelect
             getOptionLabel={this.getOptionLabel}
             loadOptions={input => this.getAirportOptions(input, "origin")}
@@ -126,7 +128,7 @@ class Search extends Component {
           <button type="button" className="small" onClick={this.handleRemoveTrip(idx)}>
             -
           </button>
-          <button type="button" className="small" onClick={this.handleAddTrip}>
+          <button type="button" className="small" onClick={this.handleAddTrip(idx)}>
             +
           </button>
         </div>
