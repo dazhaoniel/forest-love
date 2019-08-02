@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from "./Projects";
 
 function About() {
   return (
@@ -17,15 +18,18 @@ function About() {
         <div className="col-md-8 p-lg-5 mx-auto my-5">
           <h4>Why is carbon offsetting important?</h4>
           <h4>It balances out the carbon we created through</h4>
-          <p>reforestation</p>
-          <p>sequestration</p>
-          <p>investing in renewable energy</p>
+          <ul>
+            <li>reforestation</li>
+            <li>sequestration</li>
+            <li>investing in renewable energy</li>
+          </ul>
           <h4>Travel Better.</h4>
-          <h2>Forest Love</h2>
+          {/*<h2>Forest Love</h2>*/}
           <h4>Our mission is simple.</h4>
         </div>
         <div>
           <h4>Projects We Support</h4>
+          <Projects />
         </div>
       </div>
     </div>
