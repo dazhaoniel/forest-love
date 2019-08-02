@@ -27,4 +27,4 @@ Airport city and codes pickled from orginal `.dat` data from [OpenFlights Airpor
 - Ensure that node and npm are installed
 - cd into `client` and run a npm install
 - `npm start` to start the front end developmental server
-- Package.json is serving from "localhost:5000" via the "proxy" key/value, so REST requests default to this; this will need to be changed eventually
+- Package.json is serving from "localhost:3000" via the "proxy" key/value, so REST requests default to this; this will need to be changed eventually
