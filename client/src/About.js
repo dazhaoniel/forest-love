@@ -14,7 +14,7 @@ function About() {
         </div>
       </div>
       <div className="container">
-        <div className="col-md-5 p-lg-5 mx-auto my-5">
+        <div className="col-md-8 p-lg-5 mx-auto my-5">
           <h4>Why is carbon offsetting important?</h4>
           <h4>It balances out the carbon we created through</h4>
           <p>reforestation</p>

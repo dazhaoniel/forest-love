@@ -7,14 +7,14 @@ import logo from './assets/images/logo.png';
 function App() {
   return (
     <Router>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white sticky-top">
-          <Link to="/" class="navbar-brand">
+      <div className="container">
+        <nav className="navbar navbar-expand-lg bg-white sticky-top">
+          <Link to="/" className="navbar-brand">
             <img src={logo} height="70" alt="Forest Love"/>
           </Link>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <Link to="/about/" class="nav-link">About</Link>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link to="/about/" className="nav-link">About</Link>
             </li>
           </ul>
         </nav>
