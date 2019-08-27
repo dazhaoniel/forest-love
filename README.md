@@ -18,7 +18,7 @@ Airport city and codes pickled from orginal `.dat` data from [OpenFlights Airpor
 - from main root, `forest-love`, run `virtualenv venv`
 - run `source venv/bin/activate`
 - install dependencies via `pip install -r requirements.txt`
-- `cd app` and run `python app.py`
+- run `python main.py`
 - Make posts to endpoints in API.md with sample payload
 
 ## Front end client
