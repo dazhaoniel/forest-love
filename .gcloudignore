@@ -26,7 +26,6 @@ __pycache__/
 *.vue
 node_modules/
 notebook/
-scrape/
 doc/
 .ipynb_checkpoints/
 LICENSE
