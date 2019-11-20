@@ -125,10 +125,10 @@ class Search extends Component {
               Round-trip
             </label>
           </div>
-          <button type="button" className="small" onClick={this.handleRemoveTrip(idx)}>
+          <button type="button" className="btn btn-outline-secondary btn-sm" onClick={this.handleRemoveTrip(idx)}>
             -
           </button>
-          <button type="button" className="small" onClick={this.handleAddTrip(idx)}>
+          <button type="button" className="btn btn-outline-secondary btn-sm" onClick={this.handleAddTrip(idx)}>
             +
           </button>
         </div>
