@@ -133,7 +133,7 @@ class Search extends Component {
           </button>
         </div>
         ))}
-        <button type="button" onClick={this.getResults} className="btn btn-primary">
+        <button type="button" onClick={this.getResults} className="btn btn-primary my-5">
           See my carbon footprint!
         </button>
         <div>
